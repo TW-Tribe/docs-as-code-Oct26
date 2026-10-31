@@ -4,29 +4,29 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /*
  * HOW TO PUBLISH WHERE
  * --------------------
- * GitHub Pages (project site):  url = https://<org>.github.io   baseUrl = /<repo>/
+ * GitHub Pages (project site):  url = https://tw-tribe.github.io   baseUrl = /docs-as-code-Oct26/
  * Company subdomain:            url = https://docs.company.com  baseUrl = /
  * Company subpath:              url = https://www.company.com   baseUrl = /docs/
  *
  * Set the defaults below, or override per environment with DOCS_URL and
  * DOCS_BASE_URL (the deploy workflows do this), so the file never changes.
  */
-const ORG = 'YOUR-ORG';
-const REPO = 'YOUR-REPO';
+const ORG = 'TW-Tribe';
+const REPO = 'docs-as-code-Oct26';
 
 const url = process.env.DOCS_URL || `https://${ORG}.github.io`;
 const baseUrl = process.env.DOCS_BASE_URL || `/${REPO}/`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Acme Docs',
+  title: 'TWT Documentation',
   tagline: 'Docs as code for everyone',
   favicon: 'img/favicon.svg',
 
   url,
   baseUrl,
-  organizationName: ORG, // GitHub org or user
-  projectName: REPO, // GitHub repo name
+  organizationName: 'TW-Tribe', // GitHub org or user
+  projectName: 'docs-as-code-Oct26', // GitHub repo name
   trailingSlash: false,
 
   // Quality gates: a broken link fails the build (and the PR check).
@@ -65,11 +65,11 @@ const config = {
   themeConfig: /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
     colorMode: {respectPrefersColorScheme: true},
     navbar: {
-      title: 'Acme Docs',
-      logo: {alt: 'Acme logo', src: 'img/logo.svg'},
+      title: 'TWT Documentation',
+      logo: {alt: 'TWT logo', src: 'img/twtlogo.png'},
       items: [
         {type: 'docSidebar', sidebarId: 'mainSidebar', position: 'left', label: 'Docs'},
-        {href: `https://github.com/${ORG}/${REPO}`, label: 'GitHub', position: 'right'},
+        {href: `https://github.com/TW-Tribe/docs-as-code-Oct26`, label: 'GitHub', position: 'right'},
       ],
     },
     footer: {
@@ -84,10 +84,10 @@ const config = {
         },
         {
           title: 'Project',
-          items: [{label: 'GitHub', href: `https://github.com/${ORG}/${REPO}`}],
+          items: [{label: 'GitHub', href: `https://github.com/TW-Tribe/docs-as-code-Oct26`}],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Acme Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Tech Writer's Tribe Product Documentation.`,
     },
     prism: {
       theme: prismThemes.github,
