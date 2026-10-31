@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <Link className="button button--lg" style={{background: 'var(--acme-accent)', color: '#1f1740'}} to="/docs/intro">
-            Start reading
+            View Documents
           </Link>
         </div>
       </header>
